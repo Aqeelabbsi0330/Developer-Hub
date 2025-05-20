@@ -1,4 +1,5 @@
 import React from 'react'
+import Select from 'react-select'
 import Button from '../Button/Button'
 import logo from '../../assets/public/logo-colored.svg'
 import profile from '../../assets/public/Profile.png'
@@ -17,6 +18,19 @@ import russia from'../../assets/public/flags/russia.png'
 import usa from'../../assets/public/flags/usa.png'
 import scoltland from'../../assets/public/flags/scotland.png'
 export default function Header() {
+  const countryOptions = [
+  { value: 'usa', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={usa} alt="" width="20" /></span> },
+  { value: 'germany', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={germany} alt="" width="20" /></span> },
+  { value: 'france', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={france} alt="" width="20" /></span> },
+  { value: 'itlay', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={itlay} alt="" width="20" /></span> },
+  { value: 'russia', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={russia} alt="" width="20" /></span> },
+  { value: 'australia', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={australia} alt="" width="20" /></span> },
+  { value: 'england', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={england} alt="" width="20" /></span> },
+  { value: 'china', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={china} alt="" width="20" /></span> },
+  { value: 'dubai', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={dubai} alt="" width="20" /></span> },
+  
+  
+]
   return (
     <div className="container">
       <div className="header flex justify-between items-center bg-white">
@@ -41,10 +55,10 @@ export default function Header() {
               </ul>
             </div>
       </div>
-       <div className="bottom-header flex justify-between bg-white my-2.5 py-2">
-              <ul className='navigation flex gap-6'>
-                <li className='flex'>
-                  <img src={menu} alt="" />
+       <div className="bottom-header flex justify-between items-center bg-white my-2.5 py-2">
+              <ul className='navigation flex gap-4 items-center'>
+                <li className='flex items-center'>
+                  <img src={menu} alt="" className='w-[40px]' />
                   All Category
                 </li>
                 <li>Hot Offer</li>
@@ -62,7 +76,7 @@ export default function Header() {
                 </select>
                 </li>
                 <li>
-                  <select name="" id="">
+                  {/* <select name="" id="">
                     <option value=""> Ship to <img src={usa} alt="" /></option>
                     <option value=""> Ship to <img src={germany} alt="" /></option>
                     <option value=""> Ship to <img src={scoltland} alt="" /></option>
@@ -73,7 +87,9 @@ export default function Header() {
                     <option value=""> Ship to <img src={china} alt="" /></option>
                     <option value=""> Ship to <img src={france} alt="" /></option>
                     <option value=""> Ship to <img src={australia} alt="" /></option>
-                  </select>
+                  </select> */}
+                  <Select options={countryOptions}/>
+                    
                 </li>
               </ul>
             </div>
