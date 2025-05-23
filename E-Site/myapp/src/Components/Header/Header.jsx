@@ -28,6 +28,7 @@ export default function Header() {
   { value: 'england', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={england} alt="" width="20" /></span> },
   { value: 'china', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={china} alt="" width="20" /></span> },
   { value: 'dubai', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={dubai} alt="" width="20" /></span> },
+  { value: 'scoltland', label: <span style={{ display: 'inline-flex',  alignItems: 'center' }}> Ship To  <img src={scoltland} alt="" width="20" /></span> },
   
   
 ]
@@ -76,18 +77,8 @@ export default function Header() {
                 </select>
                 </li>
                 <li>
-                  {/* <select name="" id="">
-                    <option value=""> Ship to <img src={usa} alt="" /></option>
-                    <option value=""> Ship to <img src={germany} alt="" /></option>
-                    <option value=""> Ship to <img src={scoltland} alt="" /></option>
-                    <option value=""> Ship to <img src={russia} alt="" /></option>
-                    <option value=""> Ship to <img src={england} alt="" /></option>
-                    <option value=""> Ship to <img src={itlay} alt="" /></option>
-                    <option value=""> Ship to <img src={dubai} alt="" /></option>
-                    <option value=""> Ship to <img src={china} alt="" /></option>
-                    <option value=""> Ship to <img src={france} alt="" /></option>
-                    <option value=""> Ship to <img src={australia} alt="" /></option>
-                  </select> */}
+                 
+                 
                   <Select options={countryOptions}/>
                     
                 </li>
