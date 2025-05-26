@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import Header from './Components/Header/Header'
-import Button from './Components/Button/Button'
-import Navigation from './Components/Navigation/Navigation'
-import SubFooter from './Components/Sub Footer/SubFooter'
-import Footer from './Components/Footer/Footer'
-import Category from './Components/Categories/Category'
-import './App.css'
+import { useState } from "react";
+import Header from "./Components/Header/Header";
+import Button from "./Components/Button/Button";
+import Navigation from "./Components/Navigation/Navigation";
+import SubFooter from "./Components/Sub Footer/SubFooter";
+import Footer from "./Components/Footer/Footer";
+import Category from "./Components/Categories/Category";
+import Cards from "./Components/Cards/Cards";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <Category/>
+      <BrowserRouter>
+        <Cards />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
