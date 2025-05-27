@@ -51,7 +51,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -174,7 +174,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -215,7 +215,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -297,7 +297,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -338,7 +338,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -379,7 +379,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
@@ -420,7 +420,7 @@ export default function Cards() {
               <Link to="/Header">View Details</Link>
             </div>
           </div>
-          <div className="like">
+          <div className="like max-[680px]:hidden">
             <img src={like} alt="" />
           </div>
         </div>
